@@ -4,30 +4,33 @@ import maisCurtidas from "../assets/icones/mais-curtidas-inativo.png"
 import maisVistas from "../assets/icones/mais-vistas-inativo.png"
 import SurpreendaMe from "../assets/icones/surpreenda-me-inativo.png"
 import novas from "../assets/icones/novas-inativo.png"
+import styles from "./Menu.module.scss"
 
 export default function Menu() {
   return (
-    <ul>
-        <li>
+    <nav className={styles.menu}>
+      <ul className={styles.menu__lista}>
+        <li className={styles.menu__item}>
             <img src={home} alt="" />
             <a href="/">inicio</a>
         </li>
-        <li>
+        <li className={styles.menu__item}>
             <img src={maisCurtidas} alt="" />
             <a href="/">mais curtidas</a>
         </li>
-        <li>
+        <li className={styles.menu__item}>
             <img src={maisVistas} alt="" />
             <a href="/">mais vistas</a>
         </li>
-        <li>
+        <li className={styles.menu__item}>
             <img src={novas} alt="" />
             <a href="/">novas</a>
         </li>
-        <li>
+        <li className={styles.menu__item}>
             <img src={SurpreendaMe} alt="" />
             <a href="/">surpeenda-me</a>
         </li>
-    </ul>
+      </ul>
+    </nav>
   )
 }
