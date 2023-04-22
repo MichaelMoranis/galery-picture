@@ -1,29 +1,13 @@
 import React from "react";
-import favorito from "./favorito.png"
-import open from "./open.png"
+import Card from "../Card";
+
 
 export default function Cards({itens, styles}) {
   return (
     <ul className={styles.galeria__cards}>
-      {itens.map((item) => {
-        return (
-          <li key={item.id} className={styles.galeria__card}>
-            <img
-              className={styles.galeria__imagem}
-              src={item.imagem}
-              alt={item.titulo}
-            />
-            <p className={styles.galeria__descricao}>{item.titulo}</p>
-            <div>
-              <p>{itens.creditos}</p>
-              <span>
-                <img src={favorito} alt="icone coracao de curtir" />
-                <img src={open} alt="icone de abrir modal" />
-              </span>
-            </div>
-          </li>
-        );
-      })}
+        {itens.map((item) => {
+            return <Card key={itens.id} item={item} styles={styles} />
+        })}
     </ul>
   );
 }
