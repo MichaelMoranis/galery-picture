@@ -3,7 +3,7 @@
 .galeria {
   font-family: $fonte-normal;
   margin-bottom: 2rem;
-
+  text-align: center;
   h2 {
     color: $roxo;
     font-size: 24px;
@@ -11,8 +11,9 @@
 
   &__cards {
     list-style: none;
-    padding: 0;
     display: flex;
+    justify-content: center;
+    padding: 0;
     width: 100%;
     flex-wrap: wrap;
   }

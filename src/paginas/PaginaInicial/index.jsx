@@ -1,6 +1,6 @@
 import banner from "./banner.png"
 import Cabecalho from "../../componentes/Cabecalho"
-import Menu from "../../Menu"
+import Menu from "../../componentes/Menu"
 import Galeria from "../../componentes/Galeria"
 import Rodape from "../../componentes/Rodape"
 import styles from "./PaginaInicial.module.scss"
