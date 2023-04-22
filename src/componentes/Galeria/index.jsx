@@ -6,6 +6,7 @@ import favorito from "./favorito.png"
 import open from "./open.png"
 
 export default function Galeria() {
+  console.log("nova branch criada para alteracoes no projeto")
   return (
         <section className={styles.galeria}>
             <h2>navegue pela galeria</h2>
