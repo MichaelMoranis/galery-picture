@@ -2,6 +2,7 @@ import banner from "./banner.png"
 import Cabecalho from "../../componentes/Cabecalho"
 import Menu from "../../componentes/Menu"
 import Galeria from "../../componentes/Galeria"
+import Populares from "../../componentes/Populares"
 import Rodape from "../../componentes/Rodape"
 import styles from "./PaginaInicial.module.scss"
 
@@ -17,10 +18,11 @@ export default function PaginaInicial() {
                    <img src={banner} alt="a imagem da terra vista do espaco" />
                 </div>
              </section>
+             <div className={styles.galeria}>
+               <Galeria />
+               <Populares />
+            </div>
           </main>
-          <div>
-            <Galeria />
-          </div>
           <Rodape />
         </>
         )
